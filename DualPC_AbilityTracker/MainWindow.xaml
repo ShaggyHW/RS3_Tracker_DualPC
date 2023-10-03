@@ -1,0 +1,31 @@
+﻿<Window x:Class="DualPC_AbilityTracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DualPC_AbilityTracker"
+        mc:Ignorable="d"
+        Title="Rs3Tracker Server Side"
+        Height="450"
+        Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+
+            <TextBlock TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="50"
+                       Margin="10">STATUS:</TextBlock>
+            <TextBlock x:Name="txtInfo"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       Margin="10">STOPPED</TextBlock>
+            <Button x:Name="btnStartListener"
+                    Width="300"
+                    Height="40"
+                    Margin="10"
+                    Click="StartListener_Click">Start Listener</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
